@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://ciewnpirj5plg"]
+[gd_scene load_steps=2 format=3 uid="uid://ciewnpirj5plg"]
 
-[node name="Root" type="Node3D"]
+[sub_resource type="TileSet" id="TileSet_vho56"]
+tile_shape = 3
+tile_size = Vector2i(100, 100)
+
+[node name="Root" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+position = Vector2(570, 324)
+tile_set = SubResource("TileSet_vho56")
